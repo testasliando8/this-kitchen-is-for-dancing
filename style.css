@@ -228,3 +228,15 @@ footer .names-split img:first-child{width:min(100%,334px)}footer .names-split im
 footer .names img.names-full{width:min(880px,100%)}
 @media(max-width:650px){footer .names img.names-full{display:none}}
 footer .names{max-width:880px}
+/* smaller title */
+.title-art{width:min(720px,calc(100vw - 48px));margin-left:calc(min(720px,calc(100vw - 48px)) / -2);margin-top:22px;margin-bottom:30px}
+@media(max-width:650px){.title-art{width:calc(100vw - 32px);margin-left:calc((100vw - 32px) / -2)}}
+/* round play button + rounded place pill */
+.play{font-size:0;text-shadow:none}
+.play::before{content:"";position:absolute;left:50%;top:50%;width:78px;height:78px;margin:-39px 0 0 -39px;border-radius:50%;background:var(--mustard);border:2.5px solid var(--ink);box-shadow:3px 4px 0 var(--ink);transition:transform .25s}
+.play::after{content:"";position:absolute;left:50%;top:50%;width:34px;height:34px;margin:-17px 0 0 -14px;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Cpath d='M9 6.5Q9 4 11.3 5.3L27.5 15Q29.5 17 27.5 19L11.3 28.7Q9 30 9 27.5Z' fill='%23151312' stroke='%23151312' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E")}
+.screen.playing .play::after{margin-left:-17px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect x='8' y='7' width='6.5' height='20' rx='3.2' fill='%23151312'/%3E%3Crect x='19.5' y='7' width='6.5' height='20' rx='3.2' fill='%23151312'/%3E%3C/svg%3E")}
+.play:hover::before{transform:scale(1.07) rotate(-4deg)}
+footer .place{display:inline-flex;align-items:center;gap:7px;padding:7px 16px 7px 12px;border:2px solid var(--ink);border-radius:999px;background:var(--mustard);font-size:11px;letter-spacing:.04em;box-shadow:2px 3px 0 var(--ink)}
+footer .place::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--rust);border:1.5px solid var(--ink)}
+@media(max-width:650px){.play::before{width:62px;height:62px;margin:-31px 0 0 -31px}.play::after{width:28px;height:28px;margin:-14px 0 0 -11px}.screen.playing .play::after{margin-left:-14px}}
