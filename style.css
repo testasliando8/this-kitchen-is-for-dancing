@@ -302,3 +302,5 @@ footer .credit *{text-align:center}
 .intro{padding-bottom:4px!important}
 .stage{padding-top:22px!important}
 .stage{padding-top:34px!important}
+.title-text .tt{font-size:clamp(48px,11vw,80px)}
+.title-text .tt.tt-mid{font-size:clamp(30px,6.6vw,48px)}
