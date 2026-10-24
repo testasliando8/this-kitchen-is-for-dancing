@@ -294,3 +294,7 @@ footer .credit *{text-align:center}
 .title-text .tt-mid{margin:0!important}
 .title-text{animation:titlefloat2 9s ease-in-out infinite}
 .title-text .tt:last-child{margin-top:.06em!important}
+.title-text .tt-mid{margin-top:.22em!important}
+.title-text .tt:last-child{margin-top:-.04em!important}
+.title-text .tt-mid{margin-top:.12em!important}
+.title-text .tt:last-child{margin-top:.01em!important}
