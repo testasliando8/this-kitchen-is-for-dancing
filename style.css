@@ -267,3 +267,4 @@ footer>span:nth-child(2){order:0;width:auto;margin-left:auto}
 @media(max-width:650px){.title-art{width:calc(100vw - 80px);margin-left:calc((100vw - 80px) / -2)}}
 footer .credit{width:100%;text-align:center;margin:10px auto 0}
 footer .credit *{text-align:center}
+.intro>.eyebrow{display:block;text-align:center}
