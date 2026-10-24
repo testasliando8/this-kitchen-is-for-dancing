@@ -247,3 +247,9 @@ footer .place::before{content:"";width:9px;height:9px;border-radius:50%;backgrou
 .screen.playing .play::before,.screen.playing .play::after{opacity:0}
 .play:hover::before{transform:scale(1.06)}
 @media(max-width:650px){.play::before{width:46px;height:46px;margin:-23px 0 0 -23px}.play::after{width:19px;height:19px;margin:-9.5px 0 0 -7px}}
+/* note: rules sit right under each handwritten line */
+.lettertext{line-height:38px;background-image:linear-gradient(to bottom,transparent 31px,#d9c9a3 31px 32.5px,transparent 32.5px);background-size:100% 38px;background-position:0 0;background-repeat:repeat-y}
+@media(max-width:650px){.lettertext{line-height:33px;background-image:linear-gradient(to bottom,transparent 27px,#d9c9a3 27px 28.5px,transparent 28.5px);background-size:100% 33px}}
+.signature{text-wrap:balance}
+.signature{display:none}
+.intro>.eyebrow{display:none}
