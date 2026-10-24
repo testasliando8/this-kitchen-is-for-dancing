@@ -268,3 +268,29 @@ footer>span:nth-child(2){order:0;width:auto;margin-left:auto}
 footer .credit{width:100%;text-align:center;margin:10px auto 0}
 footer .credit *{text-align:center}
 .intro>.eyebrow{display:block;text-align:center}
+/* less frame, bigger video */
+.polaroid{width:620px;padding:9px 9px 0}
+.paperfoot{height:30px}
+.paperfoot #word{display:none}
+.under{max-width:620px}
+@media(max-width:650px){.polaroid{max-width:calc(100vw - 84px);padding:7px 7px 0}.paperfoot{height:26px}}
+/* header brand */
+.brand{display:inline-flex;align-items:center;gap:8px;font-size:21px}
+.brand::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--rust);border:1.5px solid var(--ink)}
+.brand span{font-size:12px;color:var(--ink);opacity:.75}
+@media(max-width:650px){.brand{font-size:18px}.brand::before{width:8px;height:8px}}
+.paperfoot{min-height:0!important;height:30px!important;padding:0 4px!important;flex-direction:row!important;justify-content:flex-end!important;align-items:center!important}
+@media(max-width:650px){.paperfoot{height:24px!important}}
+.textbutton .arr{display:inline-block;width:13px;height:13px;margin-left:5px;vertical-align:-1px;background:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 14 14%27%3E%3Cpath d=%27M3 11L11 3M5 3h6v6%27 fill=%27none%27 stroke=%27%237d9a3a%27 stroke-width=%272.2%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E") center/contain no-repeat}
+.title-text{text-align:center;line-height:.92;width:auto!important;left:auto!important;margin-left:auto!important;margin-right:auto!important}
+.title-text .tt{display:block;font-family:Shrikhand,Georgia,serif;font-weight:400;font-size:clamp(44px,10vw,74px);color:var(--ink);animation:titlefloat2 9s ease-in-out infinite}
+.title-text img.isfor{display:block;width:clamp(92px,17vw,138px)!important;height:auto;aspect-ratio:387/320!important;margin:-4px auto -8px;mix-blend-mode:multiply}
+.title-stack{width:min(340px,calc(100vw - 110px))!important;left:auto!important;margin-left:auto!important;margin-right:auto!important}
+.title-stack img{aspect-ratio:913/957!important}
+.title-text .tt-mid{font-size:clamp(28px,6vw,44px);margin:2px 0 4px}
+.title-text{margin-top:18px!important;margin-bottom:34px!important}
+.title-text{display:flex!important;flex-direction:column;align-items:center;gap:0}
+.title-text .tt{margin:0!important;line-height:1!important;animation:none;padding-right:.06em}
+.title-text .tt-mid{margin:0!important}
+.title-text{animation:titlefloat2 9s ease-in-out infinite}
+.title-text .tt:last-child{margin-top:.06em!important}
