@@ -262,3 +262,8 @@ footer .credit{text-align:left;margin:10px 0 0;padding-top:12px}
 /* footer: name left, small place tag right on same line */
 footer{flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:center}
 footer>span:nth-child(2){order:0;width:auto;margin-left:auto}
+/* narrower title, centered credit */
+.title-art{width:min(520px,calc(100vw - 72px));margin-left:calc(min(520px,calc(100vw - 72px)) / -2)}
+@media(max-width:650px){.title-art{width:calc(100vw - 80px);margin-left:calc((100vw - 80px) / -2)}}
+footer .credit{width:100%;text-align:center;margin:10px auto 0}
+footer .credit *{text-align:center}
