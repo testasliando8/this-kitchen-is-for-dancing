@@ -253,3 +253,9 @@ footer .place::before{content:"";width:9px;height:9px;border-radius:50%;backgrou
 .signature{text-wrap:balance}
 .signature{display:none}
 .intro>.eyebrow{display:none}
+/* footer: everything left-aligned, small place tag */
+footer{flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:8px}
+footer>span:nth-child(2){order:0;width:auto}
+footer .place{padding:3px 10px 3px 8px;font-size:9px;gap:5px;border-width:1.5px;box-shadow:1px 2px 0 var(--ink)}
+footer .place::before{width:6px;height:6px;border-width:1px}
+footer .credit{text-align:left;margin:10px 0 0;padding-top:12px}
