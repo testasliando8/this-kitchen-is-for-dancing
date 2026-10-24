@@ -240,3 +240,10 @@ footer .names{max-width:880px}
 footer .place{display:inline-flex;align-items:center;gap:7px;padding:7px 16px 7px 12px;border:2px solid var(--ink);border-radius:999px;background:var(--mustard);font-size:11px;letter-spacing:.04em;box-shadow:2px 3px 0 var(--ink)}
 footer .place::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--rust);border:1.5px solid var(--ink)}
 @media(max-width:650px){.play::before{width:62px;height:62px;margin:-31px 0 0 -31px}.play::after{width:28px;height:28px;margin:-14px 0 0 -11px}.screen.playing .play::after{margin-left:-14px}}
+/* calmer, smaller play: soft green, hidden while playing */
+.play{background:transparent!important}
+.play::before{width:54px;height:54px;margin:-27px 0 0 -27px;background:#b7c9a6ee;border:2px solid var(--ink);box-shadow:none}
+.play::after{width:22px;height:22px;margin:-11px 0 0 -8px}
+.screen.playing .play::before,.screen.playing .play::after{opacity:0}
+.play:hover::before{transform:scale(1.06)}
+@media(max-width:650px){.play::before{width:46px;height:46px;margin:-23px 0 0 -23px}.play::after{width:19px;height:19px;margin:-9.5px 0 0 -7px}}
