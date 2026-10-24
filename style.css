@@ -298,3 +298,6 @@ footer .credit *{text-align:center}
 .title-text .tt:last-child{margin-top:-.04em!important}
 .title-text .tt-mid{margin-top:.12em!important}
 .title-text .tt:last-child{margin-top:.01em!important}
+.title-text{margin-bottom:6px!important}
+.intro{padding-bottom:4px!important}
+.stage{padding-top:22px!important}
